@@ -10,13 +10,13 @@ BATCH_SIZE = 20
 LEARNING_RATE_BASE = 0.1
 LEARNING_RATE_DECAY = 0.99
 REGULARIZER = 0.0001
-STEPS = 100000
+STEPS = 10000
 MOVING_AVERAGE_DECAY = 0.99
 MODEL_SAVE_PATH = './model/'
 MODEL_NAME = 'audio_model'
 num_examples=10000  
-a=[1]
-b=[2]
+a=[1,0]
+b=[0,1]
 def get_wav_mfcc(wav_path):
     f = wave.open(wav_path,'rb')
     params = f.getparams()
